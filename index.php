@@ -214,6 +214,37 @@ require_once DOC_ROOT.'/common/php/common.php';
           </div>
         </div>
         <div class="Nav-menu">
+          <div class="Nav-menu-content">
+            <div class="Nav-menu-content-list">
+              <p class="Nav-menu-content-item">Điện thoại</p>
+              <p class="Nav-menu-content-item">Tablet</p>
+              <p class="Nav-menu-content-item">Phụ kiện</p>
+              <p class="Nav-menu-content-item">Đồng hồ</p>
+              <p class="Nav-menu-content-item">Âm thanh</p>
+              <p class="Nav-menu-content-item">Laptop</p>
+              <p class="Nav-menu-content-item">Sim Thẻ</p>
+              <p class="Nav-menu-content-item">Hàng cũ</p>
+              <p class="Nav-menu-content-item">Trả góp</p>
+              <p class="Nav-menu-content-item">Dịch vụ</p>
+              <p class="Nav-menu-content-item">Khuyến mãi</p>
+              <p class="Nav-menu-content-item">Tin tức</p>
+              <p class="Nav-menu-content-item">Thu cũ đổi mới</p>
+              <p class="Nav-menu-content-item">Ưu đãi đối tác</p>
+            </div>
+            <div class="Nav-menu-content-footer">
+              <div class="Nav-menu-content-footer-contact">
+                <img src="/common/img/contact_free_ico.png" alt="">
+                <a href="tel:91919191919">091919191919</a>
+              </div>
+              <div class="Nav-menu-content-footer-location">
+                <p>Nơi mua</p>
+                <select>
+                  <option value="hanoi">Hà Nội</option>
+                  <option value="hanoi">Hồ Chí Minh</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>

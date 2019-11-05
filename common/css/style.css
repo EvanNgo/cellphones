@@ -60,3 +60,7 @@ input, select, textarea {
   max-width: 1240px;
   width: 100%;
 }
+
+.Noscroll {
+  overflow: hidden;
+}
