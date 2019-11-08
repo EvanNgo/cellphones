@@ -21,5 +21,20 @@
         $('body').removeClass('Noscroll');
       }
     });
+
+    var carousel = $('.js-carousel');
+    var carouselCtx = $('.js-carouselCtx');
+
+    carouselInit();
+
+    $(window).on('resize',function(){
+      carouselInit();
+    });
+
+    function carouselInit() {
+      var mWidth = carousel.width();
+      var mHeight = mWidth/2.665;
+      carouselCtx.height(mHeight);
+    }
   });
 })(jQuery);

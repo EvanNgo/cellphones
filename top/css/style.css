@@ -401,3 +401,64 @@ header {
     font-size: 14px;
   }
 }
+
+/***************************** Banner ***************************/
+.Banner {
+  display: flex;
+  margin-top: 8px;
+}
+
+.Carousel {
+  flex: 0 0 68%;
+}
+
+.Carousel-nav {
+  border: 1px solid #ddd;
+  display: flex;
+  min-height: 50px;
+}
+
+.Carousel-nav-item {
+  align-items: center;
+  border-right: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Carousel-nav-item:last-child {
+  border-right: none;
+}
+
+.Banner-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.Banner-content__item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.Banner-content__item:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .Banner {
+    flex-direction: column;
+  }
+  .Carousel {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .Banner-content {
+    flex-direction: row;
+  }
+}
