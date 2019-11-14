@@ -41,23 +41,23 @@ require_once DOC_ROOT.'/common/php/common.php';
             <div class="js-carouselBtn Carousel-content__btn Carousel-content__btn--right"></div>
           </div>
           <div class="Carousel-nav">
-            <div class="js-carouselNavItem Carousel-nav-item" data-index="1">
-              <p class="Carousel-nav-item__txt">1</p>
+            <div class="js-carouselNavItem Carousel-nav-item Carousel-nav-item--active" data-index="1">
+              <p class="only-pc Carousel-nav-item__txt">1</p>
             </div>
             <div class="js-carouselNavItem Carousel-nav-item" data-index="2">
-              <p class="Carousel-nav-item__txt">2</p>
+              <p class="only-pc Carousel-nav-item__txt">2</p>
             </div>
             <div class="js-carouselNavItem Carousel-nav-item" data-index="3">
-              <p class="Carousel-nav-item__txt">3</p>
+              <p class="only-pc Carousel-nav-item__txt">3</p>
             </div>
             <div class="js-carouselNavItem Carousel-nav-item" data-index="4">
-              <p class="Carousel-nav-item__txt">4</p>
+              <p class="only-pc Carousel-nav-item__txt">4</p>
             </div>
             <div class="js-carouselNavItem Carousel-nav-item" data-index="5">
-              <p class="Carousel-nav-item__txt">5</p>
+              <p class="only-pc Carousel-nav-item__txt">5</p>
             </div>
             <div class="js-carouselNavItem Carousel-nav-item" data-index="6">
-              <p class="Carousel-nav-item__txt">6</p>
+              <p class="only-pc Carousel-nav-item__txt">6</p>
             </div>
           </div>
         </div>
