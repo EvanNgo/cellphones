@@ -24,6 +24,8 @@
 
     var carousel = $('.js-carousel');
     var carouselCtx = $('.js-carouselCtx');
+    var itemLength = $('.js-carouselList .Carousel-content-item').length;
+    var isScrolling = false;
 
     carouselInit();
 
@@ -40,6 +42,9 @@
     var currentItem = 1;
 
     $('.js-carouselNavItem').click(function(){
+      if ($(this).hasClass('Carousel-nav-item--active')) {
+        return;
+      }
       var index = $(this).attr('data-index');
       currentItem = index;
       scrollCarousel(currentItem);
@@ -51,14 +56,27 @@
       } else {
         currentItem--;
       }
+      if (currentItem > itemLength) {
+        currentItem = 1;
+      } else if (currentItem < 1) {
+        currentItem = itemLength;
+      }
       scrollCarousel(currentItem);
     });
 
     function scrollCarousel(index) {
+      if (isScrolling) {
+        return;
+      }
+      isScrolling = true;
       var carouselItem = $('#carousel'+index);
+      $('.Carousel-nav-item--active').removeClass('Carousel-nav-item--active');
+      $('.js-carouselNavItem[data-index='+index+']').addClass('Carousel-nav-item--active');
       $('.js-carouselList').animate({
         'left' : 0-carouselItem.position().left
-      }, 200);
+      }, 400, function(){
+        isScrolling = false;
+      });
     }
   });
 })(jQuery);
