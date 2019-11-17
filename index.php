@@ -18,23 +18,23 @@ require_once DOC_ROOT.'/common/php/common.php';
         <div class="js-carousel Carousel">
           <div class="js-carouselCtx Carousel-content">
             <div class="js-carouselList Carousel-content-list">
-              <div class="Carousel-content-item" id="carousel1">
+              <div class="Carousel-content-item" id="carousel1" data-index="1">
                 <img src="/top/img/carousel_001.webp" alt="">
               </div>
-              <div class="Carousel-content-item" id="carousel2">
+              <div class="Carousel-content-item" id="carousel2" data-index="2">
+                <img src="/top/img/carousel_002.webp" alt="">
+              </div>
+              <div class="Carousel-content-item" id="carousel3" data-index="3">
+                <img src="/top/img/carousel_003.webp" alt="">
+              </div>
+              <div class="Carousel-content-item" id="carousel4" data-index="4">
+                <img src="/top/img/carousel_004.webp" alt="">
+              </div>
+              <div class="Carousel-content-item" id="carousel5" data-index="5">
                 <img src="/top/img/carousel_001.webp" alt="">
               </div>
-              <div class="Carousel-content-item" id="carousel3">
-                <img src="/top/img/carousel_001.webp" alt="">
-              </div>
-              <div class="Carousel-content-item" id="carousel4">
-                <img src="/top/img/carousel_001.webp" alt="">
-              </div>
-              <div class="Carousel-content-item" id="carousel5">
-                <img src="/top/img/carousel_001.webp" alt="">
-              </div>
-              <div class="Carousel-content-item" id="carousel6">
-                <img src="/top/img/carousel_001.webp" alt="">
+              <div class="Carousel-content-item" id="carousel6" data-index="6">
+                <img src="/top/img/carousel_006.webp" alt="">
               </div>
             </div>
             <div class="js-carouselBtn Carousel-content__btn"></div>
