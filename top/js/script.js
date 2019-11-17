@@ -1,5 +1,36 @@
 (function($) {
   $(function() {
+    // $(window).on('mousemove',function(e){
+    //   //Bien event
+    //   //e.pageX - khoảng cách chuột tới lề trái màn hình.
+    //   //e.pageY - khoảng cách chuột tới lề trên màn hình.
+    //   $('.js-carouselList').css({left:e.pageX});
+    // });
+    $('.js-carouselList img').on('mousedown',function(e){
+      e.preventDefault();
+    });
+
+    var currentX = 0;
+
+    $('.js-carouselList').on('mousedown',function(e){
+      currentX = e.pageX;
+      window.addEventListener('mousemove',carouselGrabbing);
+      window.addEventListener('mouseup',carouselStop);
+    });
+
+    function carouselGrabbing(e) {
+      var distanceX = e.pageX - currentX;
+      currentX = e.pageX;
+      $('.js-carouselList').css({
+        left: $('.js-carouselList').position().left + distanceX
+      })
+    }
+
+    function carouselStop(e) {
+      console.log('stop');
+      window.removeEventListener('mousemove',carouselGrabbing);
+      window.removeEventListener('mouseup',carouselStop);
+    }
 
     $('.js-locationBtn').click(function(){
       var mParent = $(this).parent();

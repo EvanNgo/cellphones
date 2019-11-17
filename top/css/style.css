@@ -507,6 +507,7 @@ header {
 
 .Carousel-content-list {
   display: flex;
+  left: 0;
   position: relative;
 }
 
