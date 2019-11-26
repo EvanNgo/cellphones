@@ -10,7 +10,8 @@
       currentX : 0,
       startX: 0,
       currentItem : 1,
-      isScrolling : false
+      isScrolling : false,
+      isNeedToBack : false
     }
 
     setUpCasousel();
@@ -43,10 +44,10 @@
     }
 
     function scrollCarousel(index) {
-      isScrolling = true;
+      Carousel.isScrolling = true;
       var carouselItem = $("#carousel" + index);
       if (carouselItem.length == 0) {
-        isScrolling = false;
+        Carousel.isScrolling = false;
         return;
       }
       if (carouselItem.hasClass('Cloned')) {
@@ -84,17 +85,20 @@
     });
 
     function carouselGrabbing(e) {
+      Carousel.isNeedToBack = true;
       var distanceX = e.pageX - Carousel.currentX;
       Carousel.currentX = e.pageX;
       Carousel.list.css({
         left: Carousel.list.position().left + distanceX
       });
       if (e.pageX - Carousel.startX >= 50) {
+        Carousel.isNeedToBack = false;
         Carousel.currentItem--;
         scrollCarousel(Carousel.currentItem);
         window.removeEventListener("mousemove", carouselGrabbing);
         window.removeEventListener("mouseup", carouselStop);
       } else if (Carousel.startX - e.pageX >= 50) {
+        Carousel.isNeedToBack = false;
         Carousel.currentItem++;
         scrollCarousel(Carousel.currentItem);
         window.removeEventListener("mousemove", carouselGrabbing);
@@ -105,6 +109,18 @@
     function carouselStop(e) {
       window.removeEventListener("mousemove", carouselGrabbing);
       window.removeEventListener("mouseup", carouselStop);
+      if (Carousel.isNeedToBack) {
+        var carouselItem = $("#carousel" + Carousel.currentItem);
+        Carousel.list.animate(
+          {
+            left: 0 - carouselItem.position().left
+          },
+          400,
+          function() {
+            Carousel.isScrolling = false;
+          }
+        );
+      }
     }
 
     $(".js-locationBtn").click(function() {
