@@ -167,6 +167,37 @@
       scrollCarousel(Carousel.currentItem);
     });
 
-    // ************************************ Item 2 ******************************************
+    // ************************************ Product ******************************************
+    var isGiftScrolling = false;
+    $('.js-productGiftBtn').click(function(){
+      if (isGiftScrolling) {
+        return;
+      }
+      isGiftScrolling = true;
+      var parent = $(this).parent();
+      if (parent.hasClass('Product-content-item-gift--active')) {
+        parent.removeClass('Product-content-item-gift--active');
+        setTimeout(function () {
+          parent.find('.Product-content-item-gift-detail').hide();
+          isGiftScrolling = false;
+        }, 500);
+      } else {
+        parent.find('.Product-content-item-gift-detail').show();
+        setTimeout(function () {
+          parent.addClass('Product-content-item-gift--active');
+          isGiftScrolling = false;
+        }, 20);
+      }
+    })
+
+    $('.js-productCartBtn').click(function(){
+      var cartNum = $('.js-cartView').attr('data-count');
+      cartNum++;
+      $('.js-cartView').attr('data-count',cartNum++)
+    });
+
+    setTimeout(function () {
+      $('.js-cart').removeClass('Cart--disable');
+    }, 1000);
   });
 })(jQuery);
