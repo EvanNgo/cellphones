@@ -193,11 +193,42 @@
     $('.js-productCartBtn').click(function(){
       var cartNum = $('.js-cartView').attr('data-count');
       cartNum++;
-      $('.js-cartView').attr('data-count',cartNum++)
+      //them vao cookie hoac cap nhat len server voi user id
+      var parent = $(this).closest('.Product-content-item');
+      var productName = parent.find('.Product-content-item-detail__name').text();
+      $('.js-cartView').attr('data-count',cartNum++);
+      showNotification(productName, cartNum % 2 );
     });
 
     setTimeout(function () {
       $('.js-cart').removeClass('Cart--disable');
     }, 1000);
+
+    // ************************************ Notification ******************************************
+    var Notification = {
+      body: $('.js-Noti'),
+      message: $('.js-NotiMessage'),
+      isNeedToClose: true
+    }
+    var myTimeOut;
+    function showNotification(productName, isError) {
+      if (Notification.body.hasClass('Notification--active')) {
+        clearTimeout(myTimeOut);
+        closeNotification(true, productName, isError);
+        return;
+      }
+      Notification.body.attr('data-error', isError);
+      Notification.message.text('Thêm sản phẩm '+ productName +' thành công');
+      Notification.body.addClass('Notification--active');
+      myTimeOut = setTimeout(closeNotification, 10000);
+    }
+    function closeNotification(isReopen = false, newProductName = "", isError = 0) {
+      Notification.body.removeClass('Notification--active');
+      if (isReopen) {
+        setTimeout(function () {
+          showNotification(newProductName, isError);
+        }, 500);
+      }
+    }
   });
 })(jQuery);

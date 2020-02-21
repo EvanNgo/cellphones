@@ -96,7 +96,7 @@ require_once DOC_ROOT.'/common/php/common.php';
                 <img src="/top/img/product_item_img.webp" alt="">
               </div>
               <div class="Product-content-item-detail">
-                <p class="Product-content-item-detail__name">iPhone 11 Chính hãng (VN/A)</p>
+                <p class="Product-content-item-detail__name">iPhone 2 Chính hãng (VN/A)</p>
                 <p class="Product-content-item-detail__price">23.000.000 đ<span>28.000.000 đ</span></p>
                 <p class="Product-content-item-detail__txt">Thu cũ đổi mới iphone 11 | pro | pro max - giá thu tốt nhất thị trường và <strong>1 km</strong> khác</p>
               </div>
@@ -125,7 +125,7 @@ require_once DOC_ROOT.'/common/php/common.php';
                 <img src="/top/img/product_item_img.webp" alt="">
               </div>
               <div class="Product-content-item-detail">
-                <p class="Product-content-item-detail__name">iPhone 11 Chính hãng (VN/A)</p>
+                <p class="Product-content-item-detail__name">iPhone 3 Chính hãng (VN/A)</p>
                 <p class="Product-content-item-detail__price">23.000.000 đ<span>28.000.000 đ</span></p>
                 <p class="Product-content-item-detail__txt">Thu cũ đổi mới iphone 11 | pro | pro max - giá thu tốt nhất thị trường và <strong>1 km</strong> khác</p>
               </div>
@@ -154,7 +154,7 @@ require_once DOC_ROOT.'/common/php/common.php';
                 <img src="/top/img/product_item_img.webp" alt="">
               </div>
               <div class="Product-content-item-detail">
-                <p class="Product-content-item-detail__name">iPhone 11 Chính hãng (VN/A)</p>
+                <p class="Product-content-item-detail__name">iPhone 4 Chính hãng (VN/A)</p>
                 <p class="Product-content-item-detail__price">23.000.000 đ<span>28.000.000 đ</span></p>
                 <p class="Product-content-item-detail__txt">Thu cũ đổi mới iphone 11 | pro | pro max - giá thu tốt nhất thị trường và <strong>1 km</strong> khác</p>
               </div>
@@ -183,7 +183,7 @@ require_once DOC_ROOT.'/common/php/common.php';
                 <img src="/top/img/product_item_img.webp" alt="">
               </div>
               <div class="Product-content-item-detail">
-                <p class="Product-content-item-detail__name">iPhone 11 Chính hãng (VN/A)</p>
+                <p class="Product-content-item-detail__name">iPhone 5 Chính hãng (VN/A)</p>
                 <p class="Product-content-item-detail__price">23.000.000 đ<span>28.000.000 đ</span></p>
                 <p class="Product-content-item-detail__txt">Thu cũ đổi mới iphone 11 | pro | pro max - giá thu tốt nhất thị trường và <strong>1 km</strong> khác</p>
               </div>
@@ -212,7 +212,7 @@ require_once DOC_ROOT.'/common/php/common.php';
                 <img src="/top/img/product_item_img.webp" alt="">
               </div>
               <div class="Product-content-item-detail">
-                <p class="Product-content-item-detail__name">iPhone 11 Chính hãng (VN/A)</p>
+                <p class="Product-content-item-detail__name">iPhone 6 Chính hãng (VN/A)</p>
                 <p class="Product-content-item-detail__price">23.000.000 đ<span>28.000.000 đ</span></p>
                 <p class="Product-content-item-detail__txt">Thu cũ đổi mới iphone 11 | pro | pro max - giá thu tốt nhất thị trường và <strong>1 km</strong> khác</p>
               </div>
@@ -241,7 +241,7 @@ require_once DOC_ROOT.'/common/php/common.php';
                 <img src="/top/img/product_item_img.webp" alt="">
               </div>
               <div class="Product-content-item-detail">
-                <p class="Product-content-item-detail__name">iPhone 11 Chính hãng (VN/A)</p>
+                <p class="Product-content-item-detail__name">iPhone 7 Chính hãng (VN/A)</p>
                 <p class="Product-content-item-detail__price">23.000.000 đ<span>28.000.000 đ</span></p>
                 <p class="Product-content-item-detail__txt">Thu cũ đổi mới iphone 11 | pro | pro max - giá thu tốt nhất thị trường và <strong>1 km</strong> khác</p>
               </div>
@@ -270,7 +270,7 @@ require_once DOC_ROOT.'/common/php/common.php';
                 <img src="/top/img/product_item_img.webp" alt="">
               </div>
               <div class="Product-content-item-detail">
-                <p class="Product-content-item-detail__name">iPhone 11 Chính hãng (VN/A)</p>
+                <p class="Product-content-item-detail__name">iPhone 8 Chính hãng (VN/A)</p>
                 <p class="Product-content-item-detail__price">23.000.000 đ<span>28.000.000 đ</span></p>
                 <p class="Product-content-item-detail__txt">Thu cũ đổi mới iphone 11 | pro | pro max - giá thu tốt nhất thị trường và <strong>1 km</strong> khác</p>
               </div>
@@ -299,7 +299,7 @@ require_once DOC_ROOT.'/common/php/common.php';
                 <img src="/top/img/product_item_img.webp" alt="">
               </div>
               <div class="Product-content-item-detail">
-                <p class="Product-content-item-detail__name">iPhone 11 Chính hãng (VN/A)</p>
+                <p class="Product-content-item-detail__name">iPhone 8s Chính hãng (VN/A)</p>
                 <p class="Product-content-item-detail__price">23.000.000 đ<span>28.000.000 đ</span></p>
                 <p class="Product-content-item-detail__txt">Thu cũ đổi mới iphone 11 | pro | pro max - giá thu tốt nhất thị trường và <strong>1 km</strong> khác</p>
               </div>
@@ -328,7 +328,7 @@ require_once DOC_ROOT.'/common/php/common.php';
                 <img src="/top/img/product_item_img.webp" alt="">
               </div>
               <div class="Product-content-item-detail">
-                <p class="Product-content-item-detail__name">iPhone 11 Chính hãng (VN/A)</p>
+                <p class="Product-content-item-detail__name">iPhone 10 Chính hãng (VN/A)</p>
                 <p class="Product-content-item-detail__price">23.000.000 đ<span>28.000.000 đ</span></p>
                 <p class="Product-content-item-detail__txt">Thu cũ đổi mới iphone 11 | pro | pro max - giá thu tốt nhất thị trường và <strong>1 km</strong> khác</p>
               </div>
@@ -388,6 +388,12 @@ require_once DOC_ROOT.'/common/php/common.php';
     <div class="js-cart Cart Cart--disable">
       <div class="js-cartView Cart__btn" data-count="3">
         <i class="fas fa-shopping-cart"></i>
+      </div>
+    </div>
+    <!-- Notification -->
+    <div class="js-Noti Notification" data-error="0">
+      <div class="Notification-content">
+        <div class="js-NotiMessage Notification-content-message"></div>
       </div>
     </div>
     <footer></footer>

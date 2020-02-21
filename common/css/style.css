@@ -64,3 +64,25 @@ input, select, textarea {
 .Noscroll {
   overflow: hidden;
 }
+
+.Notification {
+  border: 1px solid #28a745;
+  padding: 10px;
+  border-radius: 5px;
+  background: #d1ffdc;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 300px;
+  transition: transform ease 500ms;
+  transform: translateX(400px);
+}
+
+.Notification[data-error='0'] {
+  border: 1px solid #dc3545;
+  background: #efe2e4;
+}
+
+.Notification--active {
+  transform: translateX(0);
+}
