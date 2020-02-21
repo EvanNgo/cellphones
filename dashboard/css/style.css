@@ -1,0 +1,90 @@
+body {
+
+}
+
+header {
+  height: 50px;
+  background: #343434;
+}
+
+.Nav {
+  position: fixed;
+  width: 250px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: all ease 350ms;
+  transform: translateX(-100%);
+}
+
+.Nav--active {
+  transform: translateX(0);
+}
+
+.Nav-btn {
+  cursor: pointer;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 250ms;
+  transform: translateX(100%);
+}
+
+.Nav--active .Nav-btn {
+  transform: translateX(0);
+  right: 5px;
+}
+
+.Nav-btn:hover {
+  background: #666;
+}
+
+.Nav-content {
+  width: 100%;
+  height: 100%;
+  background: #444;
+  padding-top: 50px;
+}
+
+.Nav-menu-item {
+  display: block;
+  background: #e11b1e;
+  transition: padding ease 250ms;
+}
+
+.Nav-menu-item span {
+  background: #444;
+  color: #ccc;
+  display: block;
+  padding: 10px;
+}
+
+.Nav-menu-item:hover {
+  opacity: 1;
+}
+
+.Nav-menu-item:hover span {
+  color: #fff;
+  background: #555;
+}
+
+.Nav-menu-item--active {
+  padding-left: 10px;
+}
+
+.Nav-menu-item--active span, .Nav-menu-item:hover span {
+  background: #666;
+  color: #fff;
+}
+
+.Content {
+  background: #eee;
+}
