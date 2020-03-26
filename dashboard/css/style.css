@@ -7,6 +7,25 @@ header {
   background: #343434;
 }
 
+.Button {
+  font-size: 1.3rem;
+  padding: 5px 10px;
+  color: #fff;
+  background: #383838;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.Button:hover {
+  opacity: 0.7;
+}
+
+.Button:active {
+  filter: brightness(0.7);
+}
+
 .Nav {
   position: fixed;
   width: 250px;
@@ -85,6 +104,89 @@ header {
   color: #fff;
 }
 
-.Content {
-  background: #eee;
+/* Common table layout */
+.f-50 {
+  flex: 0 0 50px;
 }
+.f-80 {
+  flex: 0 0 80px;
+}
+.f-100 {
+  flex: 0 0 100px;
+}
+.f-130 {
+  flex: 0 0 130px;
+}
+.f-150 {
+  flex: 0 0 150px;
+}
+.f-200 {
+  flex: 0 0 200px;
+}
+.f-250 {
+  flex: 0 0 250px;
+}
+.f-full {
+  flex-grow: 1;
+}
+/* END: Common table layout */
+
+/* User-content */
+.User {
+  padding: 10px;
+}
+
+.User-content {
+  display: flex;
+}
+
+.User-content section:first-child {
+  flex: 0 0 60%;
+  margin-right: 20px;
+}
+
+.User-content section:last-child {
+  flex-grow: 1;
+}
+
+.User-list {
+  border: 1px solid #343434;
+}
+
+.User-list-head {
+  display: flex;
+  font-size: 13px;
+}
+
+.User-list-head p {
+  color: #fff;
+  background: #343434;
+  text-align: center;
+  padding: 5px;
+  border-right: 1px solid #fff;
+  font-size: 14.5px;
+}
+
+.User-list-head p:last-child {
+  border: none;
+}
+
+.User-list-item {
+  display: flex;
+  border-bottom: 1px solid #343434;
+}
+
+.User-list-item > p {
+  border-right: 1px solid #343434;
+  padding: 10px 5px;
+}
+
+.User-list-item:last-child, .User-list-item > p:last-child {
+  border: none;
+}
+
+.User-list-item .Button {
+  font-size: 13px;
+  margin-right: 5px;
+}
+/* End: User-content */

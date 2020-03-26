@@ -1,0 +1,1 @@
+<div id="productFragment" style="display:none">Product</div>
