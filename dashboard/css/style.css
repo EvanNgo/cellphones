@@ -1,5 +1,52 @@
-body {
+/* Common */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+  width: 100%;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+input, select, textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.only-pc {
+  display: block;
+}
+
+.only-sp {
+  display: none;
 }
 
 header {
@@ -131,6 +178,47 @@ header {
 }
 /* END: Common table layout */
 
+/* Field */
+.Form-field {
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.Form-field > span {
+  padding: 0 5px;
+  color: #383838;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 2px;
+}
+
+.Form-field input, .Form-field select, .Form-field textarea {
+  background: #fff;
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 5px 10px; 
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.Form-field input:disabled, .Form-field select:disabled, .Form-field textarea:disabled {
+  background: #e6e6e6;
+}
+
+.Form-field select {
+  font-size: 1.5rem;
+    height: 30px;
+}
+
+.Form-field textarea {
+  width: 100%;
+  resize: vertical;
+  border-radius: 5px;
+}
+
+/* END: Field */
+
 /* User-content */
 .User {
   padding: 10px;
@@ -147,6 +235,10 @@ header {
 
 .User-content section:last-child {
   flex-grow: 1;
+}
+
+.User-content section .Form-field:first-child {
+  margin-top: 0;
 }
 
 .User-list {
@@ -187,6 +279,16 @@ header {
 
 .User-list-item .Button {
   font-size: 13px;
+  margin-right: 5px;
+}
+
+.User-form-btn {
+  display: flex;
+  margin-top: 10px;
+}
+
+.User-form-btn__save {
+  margin-left: auto;
   margin-right: 5px;
 }
 /* End: User-content */
